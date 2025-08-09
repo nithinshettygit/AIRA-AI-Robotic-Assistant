@@ -1,1 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Agentic Science Teacher</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <header><h1>Agentic 10th-Grade Science Teacher</h1></header>
 
+    <main id="chat-area">
+      <div id="chat-window"></div>
+      <div id="controls">
+        <input id="topic-input" placeholder="Enter a topic or chapter (e.g., balanced chemical equations)" />
+        <button id="send-btn">Start Lesson</button>
+        <button id="pause-btn" style="display:none;">Pause & Ask Doubt</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal for doubts -->
+  <div id="doubt-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <button class="close-btn">X</button>
+      <div id="doubt-chat" style="height:300px; overflow-y:auto; border:1px solid #ccc; margin-bottom:10px; padding:5px;"></div>
+      <input id="doubt-input" placeholder="Ask your doubt here..." style="width:80%;" />
+      <button id="doubt-send-btn">Send</button>
+      <div class="modal-hint">Type "understood", "got it", "yes", or click X to resume lesson</div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
