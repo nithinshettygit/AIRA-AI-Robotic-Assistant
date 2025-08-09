@@ -1,0 +1,29 @@
+body {
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 0;
+  }
+  .container { max-width: 900px; margin: 24px auto; padding: 12px; }
+  header h1 { text-align:center; margin-bottom: 12px; }
+  #chat-area { background: white; border-radius: 12px; padding: 16px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+  #messages { min-height: 420px; max-height: 60vh; overflow-y: auto; padding: 8px; }
+  .msg { margin: 8px 0; padding: 10px 12px; border-radius: 10px; max-width: 82%; }
+  .msg.assistant { background: #eef2ff; align-self: flex-start; }
+  .msg.user { background: #e6ffef; align-self: flex-end; margin-left: auto; }
+  #controls { display:flex; gap:8px; margin-top: 12px; align-items:center; }
+  #controls input { flex:1; padding:10px; border-radius:8px; border:1px solid #ddd; }
+  #controls button { padding:10px 14px; border-radius:8px; border: none; background:#2563eb; color:white; cursor:pointer; }
+  #controls button:disabled { background:#bcd3ff; cursor:not-allowed; }
+  
+  /* Modal */
+  .modal { position: fixed; top:0; left:0; right:0; bottom:0; display:flex; align-items:center; justify-content:center; background: rgba(0,0,0,0.4); }
+  .hidden { display:none; }
+  .modal-content { width: 720px; background:white; border-radius:12px; padding: 16px; box-shadow:0 20px 40px rgba(0,0,0,0.2); }
+  .close { float:right; border:none; background:transparent; font-size:18px; cursor:pointer; }
+  #modal-messages { max-height: 300px; overflow-y:auto; margin-bottom:8px; padding:8px; border:1px solid #eee; border-radius:8px; }
+  .modal-input { display:flex; gap:8px; }
+  .modal-input input { flex:1; padding:8px; border-radius:6px; border:1px solid #ddd; }
+  .modal-input button { padding:8px 12px; border-radius:6px; border:none; background:#10b981; color:white; }
+  .modal-hint { margin-top:8px; color:#666; font-size:13px; }
+  
