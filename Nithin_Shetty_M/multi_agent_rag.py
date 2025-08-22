@@ -73,7 +73,7 @@ MERGED_CHUNKS_FILE = os.path.join(DATA_PATH, "merged_chunks_with_figures.json")
 SUBCHAPTER_METADATA_FILE = os.path.join(DATA_PATH, "subchapter_metadata.json")
 IMAGE_BASE_PATH = os.path.join(DATA_PATH, "images")
 
-API_KEY =  "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"
+API_KEY =  ""
 LLM_MODEL = os.getenv("LLM_MODEL", "llama3-8b-8192")
 LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://api.groq.com/openai/v1")
 
