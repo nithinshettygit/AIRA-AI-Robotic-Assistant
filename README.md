@@ -1,2 +1,2 @@
-# AIRA-AI-Robotic-Assistant
-Final project repo - team collab
+# AIRA
+AI robot teacher
